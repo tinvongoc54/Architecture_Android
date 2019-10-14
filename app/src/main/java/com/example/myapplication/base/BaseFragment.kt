@@ -1,4 +1,4 @@
 package com.example.myapplication.base
 
-class BaseFragment {
+abstract class BaseFragment<VM : BaseViewModel> {
 }

@@ -9,4 +9,8 @@ abstract class BaseViewModel : ViewModel() {
     private val compositeDisposible = CompositeDisposable()
     val isLoading = SingleLiveEvent<Boolean>()
     val onError = SingleLiveEvent<Throwable>()
+
+    fun showLoading(isShow: Boolean = true) {
+        isLoading.value = isShow
+    }
 }
